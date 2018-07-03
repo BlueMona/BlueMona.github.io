@@ -4,7 +4,7 @@
     <title>  Mona's Page  </title>
     <style>
         body { 
-            background-color: rgb(230,230,250);
+            background-color: rgb(250,250,250);
             font-family: "athelas", serif;
             line-height: 1.5em; 
             padding: 1.5em; 
@@ -22,41 +22,65 @@
             font-family:"garamond", serif;
         }
         #resume-links {
-            text-align: center;
+            float: right;
+            width: 30%;
+            padding: 1em;
             font-size: 14px;
+            
         }
         #profile-pic {
-            text-align: center;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            
+        }
+        intro-text {
+            margin: 20px;
+            padding: 1em;
+            text-align: justify;
         }
         .heading {
             text-align: left;
             font: small-caps 24px "garamond", serif;
         }
+        address{
+            background-color: rgb(232, 232, 232);
+            margin-top: 20px;
+            padding: 0.2em;
+            clear: both;
+            
+        }
 
     </style>
   </head>
   <body>
-    <h1 id = "main-title"> Welcome to my personal webpage! </h1>
-    <hr/>
-    <h2 class = "heading"> About me: </h2>
-    <div>
-      <p >
-
-        My name is Zahra Ghassemi Zavieh, but you can call me Mona.
-        I have a bachelor's degree from McGill (a joint major in Computer Science and Biology), and a master's degree in Social and Cultural Anthropology from Concordia.
-        I am currently seeking a job in either the education sector or as a junior developer in the software/tech industry (I have recently been focusing primarily on web development). 
+    <h1 id = "main-title"> Welcome to my personal webpage! </h1><hr/> <!--This is a line, don't delete -->
+      
+        <div id = "resume-links">
+            <h2 class = "heading"> Downloads: </h2>
+          <p>
+              
+            <ul>
+                <li> <a href="CV_ACADEMIC.pdf"> Click here to download my academic CV </a> <br> </li>
+                <li> <a href="PROGRAMMING_RESUME.pdf"> Tech recruiter? My programmer/developer resume is here </a> </li>
+            </ul>
+          </p>
+        </div>
+      
+        <div id = "intro-text">
+            <h2 class = "heading"> About me: </h2>
+   
+            <p>
+                <img id = "profile-pic" src="PROFILE_PIC.jpg" width="200">
+                My name is Zahra Ghassemi Zavieh, but you can call me Mona.
+                I have a bachelor's degree from McGill (a joint major in Computer Science and Biology), and a master's degree in Social and Cultural Anthropology from Concordia University in Montreal.
+                I am currently seeking a job in either the education sector or as a junior developer in the software/tech industry (I have recently been focusing primarily on web development). 
                                                                                        
-      </p>
-      <p id = "resume-links">
-        <a href="CV_ACADEMIC.pdf"> Click here to download my academic CV </a> <br>
-        <a href="PROGRAMMING_RESUME.pdf"> Tech recruiter? My programmer/developer resume is here </a>        
-      </p>
-
-      <p id = "profile-pic">
-        <img src="PROFILE_PIC.jpg" width="200">
-      </p>
-
-      <address>
+            </p>
+        </div>
+   
+    
+      <address id = "address">
        Created by Zahra (Mona) Ghassemi<br>
         <a href="mailto:zghass@cs.mcgill.ca">Email</a><br>
       </address>
