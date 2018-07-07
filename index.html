@@ -3,7 +3,7 @@
 can also try #444444
 -->
 
-<html>
+<html lang="en">
   <head>
     <title>  Mona's Page  </title>
     <style>
@@ -36,7 +36,7 @@ can also try #444444
         
         #main-title {
             text-align: center;
-            font-style: bold;
+            font-weight: bold;
             font-size: 30px; 
             font-family:"garamond", serif;
             border-bottom: 1px solid rgb(222, 222, 222);
@@ -48,12 +48,13 @@ can also try #444444
             width: 32%;
             padding: 1em;
             font-size: 14px;
+            clear: both;
             
         }
         #profile-pic {
             float: left;
             margin-right: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
             
         }
         #intro-text {
@@ -61,30 +62,40 @@ can also try #444444
             padding: 1em;
             text-align: justify;
         }
+        #site-menu {
+            padding: 1em;
+            border-bottom: 1px solid rgb(222, 222, 222);
+        }
 
 
 
     </style>
   </head>
   <body>
+      
+
+      
     <h1 id = "main-title"> Welcome to my personal webpage! </h1> <!-- <hr/>This is a line, don't delete -->
       
         <div id = "resume-links">
-            <h2 class = "heading"> Downloads: </h2>
-          <p>
-              
+            <h2 class = "heading"> Downloads: </h2>   
             <ul>
                 <li> <a href="CV_ACADEMIC.pdf"> Click here to download my academic CV </a> <br> </li>
                 <li> <a href="PROGRAMMING_RESUME.pdf"> Tech recruiter? My programmer/developer resume is here </a> </li>
             </ul>
-          </p>
         </div>
+    
+    <!--
+      <div id = "site-menu">
+          <a href= "blog.html"> blog </a>
+      </div>
+-->
       
         <div id = "intro-text">
             <h2 class = "heading"> About me: </h2>
    
             <p>
-                <img id = "profile-pic" src="PROFILE_PIC.jpg" width="200">
+                <img id = "profile-pic" src="PROFILE_PIC.jpg" alt="A picture of me" width="200">
                 My name is Zahra Ghassemi Zavieh, but you can call me Mona.
                 I have a bachelor's degree from McGill (a joint major in Computer Science and Biology), and a master's degree in Social and Cultural Anthropology from Concordia University in Montreal.
                 I am currently seeking a job in either the education sector or as a junior developer in the software/tech industry (I have recently been focusing primarily on web development). 

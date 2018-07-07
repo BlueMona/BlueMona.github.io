@@ -14,7 +14,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
 http://www.csszengarden.com
 -->
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Project: Blog</title>
@@ -24,70 +24,131 @@ http://www.csszengarden.com
         body {
             font-family: "athelas", serif;
             background-color: rgb(240, 226, 252);
+            color: #333333;
             line-height: 1.5em; 
-            padding: 1.5em;
+            margin-left: 2em;
+            margin-right: 2em;
+            padding: 3em;
+            
         }
         
         #blog-title {
             text-align: center;
             text-decoration: underline;
             font-style: bold; 
-            font-size: 30px; 
-            font-family:"Courier", monospace;
+            font-size: 36px; 
+            font-family:"Avenir", sans-serif;
+        }
+        
+        #contents-heading {
+            text-align: left;
+            font: small-caps 18px "Avenir", sans-serif;
+            text-decoration: underline;
         }
         #contents {
-            text-align: left;
-            font: small-caps 18px "Courier", monospace;
-            text-decoration: underline;
+            margin-bottom: 3em;
+            margin-top: 3em;
+            padding: 2em;
+            
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+        
+        #footer {
+            padding: 2em;
+            text-align: center;
+        }
+        
+        .post {
+            text-align: justify;
+            padding: 2em;
+            margin: 3em;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
         }
         
         .post-heading {
             text-align: left;
-            font: small-caps 24px "Courier" monospace;
+            font: small-caps 24px "Avenir", sans-serif;
             line-height: 2em;
         }
         .post-date {
             line-height: 0.5em;
         }
+        
+        
+        
     </style>
     <body>
         
         <h1 id = "blog-title">Mona's blog</h1>
 
-        <h3 id = "contents">Contents</h3>
-        <ul>
-            <li><a href="#p1" >First post: Time for a Change</a></li>
-            <li><a href="#p2" > Second post: Some Thoughts on This Blog</a></li>
+        <div id = "contents">
+            <h3 id = "contents-heading">Contents</h3>
+            <ul>
+                <li><a href="#p1" >First post: Time for a Change</a></li>
+                <li><a href="#p2" > Second post: Some Thoughts on This Blog</a></li>
+
+                <li><a href="#p3"> Third post: A New &ltstyle> World Awaits</a></li>
+                <li><a href="#p4"> Fourth post: Transferrable Skills </a></li>
+                <li><a href="#p5"> Fifth post: The Next Adventure </a></li>
+            </ul>
+        </div>
+        
+        <div class = "post" id = "p5">    
+            <h2 class = "post-heading"> Fifth post: The Next Adventure </h2>
+            <h6 class = "post-date">Posted on Friday, July 6, 2018 at 5:44 P. M. </h6>
+            <p>  
+                I didn't get a chance to do a blog post yesterday and now I'm actually making up for that. I don't feel like I have much to say though. I finished the Khan Academy chapter on HTML and CSS today. The last couple of sections were pretty short; they were basically a few more tricks and where to learn more. I also learned about html validation <a href="https://validator.w3.org"> here</a>  today. That's pretty handy. I already used it to check my index.html and found a couple of errors and warnings. I also improved the spacing here and think I'm at a point where I will indeed have to explore content outside Khan Academy if I want to make any further improvements to my webpage. But soon I'll be moving on to a review of SQL. In the meantime, I'll have to figure out how to make this blog interesting to an audience besides myself. 
+
+            </p>
+        </div> 
+        
+        <div class = "post" id ="p4">    
+            <h2 class = "post-heading"> Fourth post: Transferrable Skills </h2>
+            <h6 class = "post-date">Posted on Wednesday, July 4, 2018 at 10:55 P. M. </h6>
+            <p>  
+                I learned a few more CSS identifiers today, but mainly spent the day sprucing up both my academic CV and my programming resume. I had heard it was a good idea to add some color, so I had to figure out how to do so in LaTeX. Since modifying the formatting for every single heading seemed tedious, it occurred to me that perhaps, as with CSS, there could be a way to do so in one shot for the whole document. As I discovered, there was. So not only did I improve the look of my CV and resume, I learned how to define my own LaTeX commands and greatly improve my efficiency in styling LaTeX documents from here on. Interesting how learning how to work with one language or tool can lead to transferred insights into the use of something else. 
+
+            </p>
+        </div> 
+        
+        <div class = "post" id ="p3">
+            <h2 class = "post-heading"> Third post: A New &ltstyle> World Awaits</h2>
+            <h6 class = "post-date">Posted on Tuesday, July 3, 2018 at 5:48 P. M. </h6>
+            <p>  
+                Today I learned some more CSS. In particular, I learned about layout: how to move things around on a page and position elements in front of others. Fun stuff. If I delve into the documentation, I imagine I could start making much prettier web pages than the basic ones I have made so far. Right now, though, I think I'd like to add this blog to my github website project. It will have to get prettier, sure, but it will be a start. 
+            </p>
+        </div>
+        
+        <div class = "post" id ="p2">
+            <h2 class = "post-heading"> Second post: Some Thoughts on This Blog</h2>
+            <h6 class = "post-date">Posted on Sunday, July 1, 2018 at 5:41 P. M. </h6>
+            <p> I wouldn't normally write two posts in a day but the goal is to finish this project. I wonder if there is a way that I can use the system date function to date my posts. I'll have to figure that out. In the meantime I am considering hosting this on my old C.S. page. Of course I may eventually need to host it myself. I have been considering re-activating my dreamhost account. </p>
+        </div>
+        
+        <div class = "post" id ="p1">
+            <h2 class = "post-heading">First post: Time for a Change</h2>
+            <h6 class = "post-date">Posted on Sunday, July 1, 2018 at 5:00 P. M. </h6>
+
+            <p>Yesterday I made a plan for the rest of the Khan Academy Computer Programming and Computer Science material. It looks like I'll be done by the end of August, and will then have to move on elsewhere on the site if I want to keep up the routine I've started of doing a topic a day, and elsewhere on the web if I want to continue working on these skills (there's Coursera, which I've used before, as well as Codecademy, w3schools, and perhaps others), but mostly I think I'll be wanting to create stuff to showcase the skills I've been building. </p> 
+            <p>I've been religiously using Khan Academy since I first started using it to study for the LSAT on June 2nd. As soon as I had written the exam on June 11th, I started the Computer Programming material. I'd been meaning to go back to dusting off my coding skills, and the gamified platform made it easy and fun to do so. It's a strategic decision at this point: after completing my M.A. in Anthropology, I have found that CEGEP teaching jobs are hard to get. Most subjects require a Master's degree, but I've seen postings for computer science that only require a B.Sc. plus industry experience. Well, the industry experience is what I'm missing, and in order to get that, I'll have to prepare. </p>
+            <p> I suppose anyone reading this may be surprised at the route I've taken. I first decided to study Computer Science in part because it was an excellent choice in terms of the job opportunities it opened up. It still is. I've recently subscribed to Indeed and, in comparison to the one or two daily notifications I get for "teacher" postings in Montreal, I'll get about 30 postings for "programmer" or "junior developer". </p>
+
+            <p>Why didn't I seek such jobs before? Well, it was in part due to confidence issues (aggravated by certain people in my immediate environment who weren't particularly supportive), in part because I didn't really know how to go aboout finding jobs (I honestly feel my experience at McGill would have been better had there been some sort of mentorship program as part of the package... my faculty advisor was absolutely useless and treated me like I was in kindergarten), but largely because I didn't want to spend the rest of my life in a desk job staring at a screen for hours on end for some company. In retrospect I think I had no idea what kind of opportunities were available in tech. Most significantly, I didn't imagine I could be a programmer and an activist at the same time. The two worlds seemed completely antithetical.</p>
+
+            <p>
+            Well here I am now. A master's degree, a child, and a pending divorce later. Struggling to find a job relevant to the field into which I put so much passion for two years of my life ending in August 2017. In the past year I've taken many workshops (a year-long training in active listening, advocacy and harm reduction, a number of teaching, leadership, and French workshops, First-Aid certification and additional emergency response training) and significantly expanded my resume, and yet, no job aside from low-paying casual employment. </p>
+
+            <p>
+            Well, one reason I didn't mention above that motivated my choice of Computer Science for my undergraduate major was this: I don't particularly like staying in the same place for too long. I especially don't like stagnating. I felt like with Computer Science, I'd be able to work on a project, and when I was done, I could move on to something completely different. Well, it's time for a change. That's why I've now taken the plunge back into programming. And I feel like this time I'm ready. I'm no longer undervaluing my worth. I know I can make beautiful things. I can learn anything. I just need to put in the work.  
+            </p>
             
-            <li><a href="#p3"> Third post: A New &ltstyle> World Awaits</a></li>
-        </ul>
+        </div>
         
-        <h2 id ="p2" class = "post-heading"> Third post:</h2>
-        <h6 class = "post-date">Posted on Tuesday, July 3, 2018 at 5:48 P. M. </h6>
-        <p>  
-            Today I learned some more CSS. In particular, I learned about layout: how to move things around on a page and position elements in front of others. Fun stuff. If I delve into the documentation, I imagine I could start making much prettier web pages than the basic ones I have made so far. Right now, though, I think I'd like to add this blog to my github website project. It will have to get prettier, sure, but it will be a start. 
-        </p>
-        
-        <h2 id ="p2" class = "post-heading"> Second post: Some Thoughts on This Blog</h2>
-        <h6 class = "post-date">Posted on Sunday, July 1, 2018 at 5:41 P. M. </h6>
-        <p> I wouldn't normally write two posts in a day but the goal is to finish this project. I wonder if there is a way that I can use the system date function to date my posts. I'll have to figure that out. In the meantime I am considering hosting this on my old C.S. page. Of course I may eventually need to host it myself. I have been considering re-activating my dreamhost account. </p>
-        
-        <h2 id ="p1" class = "post-heading">First post: Time for a Change</h2>
-        <h6 class = "post-date">Posted on Sunday, July 1, 2018 at 5:00 P. M. </h6>
-        
-        <p>Yesterday I made a plan for the rest of the Khan Academy Computer Programming and Computer Science material. It looks like I'll be done by the end of August, and will then have to move on elsewhere on the site if I want to keep up the routine I've started of doing a topic a day, and elsewhere on the web if I want to continue working on these skills (there's Coursera, which I've used before, as well as Codecademy, w3schools, and perhaps others), but mostly I think I'll be wanting to create stuff to showcase the skills I've been building. </p> 
-        <p>I've been religiously using Khan Academy since I first started using it to study for the LSAT on June 2nd. As soon as I had written the exam on June 11th, I started the Computer Programming material. I'd been meaning to go back to dusting off my coding skills, and the gamified platform made it easy and fun to do so. It's a strategic decision at this point: after completing my M.A. in Anthropology, I have found that CEGEP teaching jobs are hard to get. Most subjects require a Master's degree, but I've seen postings for computer science that only require a B.Sc. plus industry experience. Well, the industry experience is what I'm missing, and in order to get that, I'll have to prepare. </p>
-        <p> I suppose anyone reading this may be surprised at the route I've taken. I first decided to study Computer Science in part because it was an excellent choice in terms of the job opportunities it opened up. It still is. I've recently subscribed to Indeed and, in comparison to the one or two daily notifications I get for "teacher" postings in Montreal, I'll get about 30 postings for "programmer" or "junior developer". </p>
-        
-        <p>Why didn't I seek such jobs before? Well, it was in part due to confidence issues (aggravated by certain people in my immediate environment who weren't particularly supportive), in part because I didn't really know how to go aboout finding jobs (I honestly feel my experience at McGill would have been better had there been some sort of mentorship program as part of the package... my faculty advisor was absolutely useless and treated me like I was in kindergarten), but largely because I didn't want to spend the rest of my life in a desk job staring at a screen for hours on end for some company. In retrospect I think I had no idea what kind of opportunities were available in tech. Most significantly, I didn't imagine I could be a programmer and an activist at the same time. The two worlds seemed completely antithetical.</p>
-        
-        <p>
-        Well here I am now. A master's degree, a child, and a pending divorce later. Struggling to find a job relevant to the field into which I put so much passion for two years of my life ending in August 2017. In the past year I've taken many workshops (a year-long training in active listening, advocacy and harm reduction, a number of teaching, leadership, and French workshops, First-Aid certification and additional emergency response training) and significantly expanded my resume, and yet, no job aside from low-paying casual employment. </p>
-        
-        <p>
-        Well, one reason I didn't mention above that motivated my choice of Computer Science for my undergraduate major was this: I don't particularly like staying in the same place for too long. I especially don't like stagnating. I felt like with Computer Science, I'd be able to work on a project, and when I was done, I could move on to something completely different. Well, it's time for a change. That's why I've now taken the plunge back into programming. And I feel like this time I'm ready. I'm no longer undervaluing my worth. I know I can make beautiful things. I can learn anything. I just need to put in the work.  
-        </p>
-        
+        <div id= "footer">
+        <a href="#blog-title"> Back to top </a>
+        </div>
         
     </body>
 </html>
