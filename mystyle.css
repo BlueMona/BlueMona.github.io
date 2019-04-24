@@ -24,6 +24,9 @@
             text-align: left;
             font: small-caps 24px "garamond", serif;
         }
+	#greeting {
+	    padding: 1em;
+	}
         
         #main-title {
             text-align: center;
@@ -37,7 +40,7 @@
         #resume-links {
             float: right;
             width: 32%;
-            padding: 2em;
+
             font-size: 14px;
             clear: both;
             
@@ -49,9 +52,11 @@
             
         }
         #intro-text {
+	    width: 62%;
             margin: 10px;
-            padding: 1em;
+
             text-align: justify;
+	    clear: left;
         }
         #site-menu {
             padding: 1em;
