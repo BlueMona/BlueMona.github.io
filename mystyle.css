@@ -8,12 +8,21 @@
         #resume-links a {
             font-family: "helvetica", sans-serif;
         }
+        a { 
+            color: cornflowerblue
+        }
+        a:active {
+            color: darkorchid
+        }
+        a:visited {
+            color: slateblue
+        }
         a:hover {
             background-color: floralwhite;
         }
         address {
             text-align: center;
-            background-color: rgb(232, 232, 232);
+            background-color: rgb(220, 239, 229);
             margin: 10px;
             padding: 0.2em;
             clear: both;
@@ -25,8 +34,11 @@
             font: small-caps 24px "garamond", serif;
         }
 	#greeting {
+        text-align: center;
+        color: seagreen;
 	    padding: 1em;
-	    font-family: "Georgia", Times, serif; 
+	    font-family: "Helvetica", Arial, serif;
+        font-size: 22px; 
 	}
         
         #main-title {
