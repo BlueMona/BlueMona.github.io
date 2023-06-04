@@ -5,6 +5,17 @@
             line-height: 1.5em; 
             padding: 1.5em; 
         }
+        .flex-container {
+            display: flex;
+            }
+        
+            .flex-child {
+                flex: 1;
+            }  
+        
+            .flex-child:first-child {
+                margin-right: 20px;
+        }
         #resume-links a {
             font-family: "helvetica", sans-serif;
         }
