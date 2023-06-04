@@ -1,98 +1,100 @@
-        body { 
-            background-color: rgb(250,250,250);
-            font-family: "athelas", serif;
-            color: #333333; 
-            line-height: 1.5em; 
-            padding: 1.5em; 
-        }
-        .flex-container {
-            display: flex;
-            }
-        
-            .flex-child {
-                flex: 1;
-            }  
-        
-            .flex-child:first-child {
-                margin-right: 20px;
-        }
-        #resume-links a {
-            font-family: "helvetica", sans-serif;
-        }
-        a { 
-            color: cornflowerblue
-        }
-        a:active {
-            color: darkorchid
-        }
-        a:visited {
-            color: slateblue
-        }
-        a:hover {
-            background-color: floralwhite;
-        }
-        address {
-            text-align: center;
-            background-color: rgb(220, 239, 229);
-            margin: 10px;
-            padding: 0.2em;
-            clear: both;
-            border: 1px solid rgb(222, 222, 222);
-        }
-        
-        .heading {
-            text-align: left;
-            font: small-caps 24px "garamond", serif;
-        }
-	#greeting {
-        text-align: center;
-        color: seagreen;
-	    padding: 1em;
-	    font-family: "Helvetica", Arial, serif;
-        font-size: 22px; 
-	}
-        
-        #main-title {
-            text-align: center;
-            font-weight: bold;
-            font-size: 30px; 
-            font-family:"garamond", serif;
-            border-bottom: 1px solid rgb(222, 222, 222);
-            padding-bottom: 1em;
-            
-        }
-        #resume-links {
-            float: right;
-            width: 32%;
+body { 
+    background-color: rgb(250,250,250);
+    font-family: "athelas", serif;
+    color: #333333; 
+    line-height: 1.5em; 
+    padding: 1.5em; 
+}
+#resume-links a {
+    font-family: "helvetica", sans-serif;
+}
+a { 
+    color: cornflowerblue
+}
+a:active {
+    color: darkorchid
+}
+a:visited {
+    color: slateblue
+}
+a:hover {
+    background-color: floralwhite;
+}
+address {
+    text-align: center;
+    background-color: rgb(220, 239, 229);
+    margin: 10px;
+    padding: 0.2em;
+    clear: both;
+    border: 1px solid rgb(222, 222, 222);
+}
+.flex-container {
+    display: flex;
+    }
 
-            font-size: 14px;
-            clear: both;
-            
-        }
-        #profile-pic {
-            float: left;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            
-        }
-        #intro-text {
-	    width: 62%;
-            margin: 10px;
+    .flex-child {
+        flex: 1;
+    }  
 
-            text-align: justify;
-	    clear: left;
+    .flex-child:first-child {
+        margin-right: 20px;
+}
+.heading {
+    text-align: left;
+    font: small-caps 24px "garamond", serif;
+}
+.heading2 {
+    text-align: left;
+    font: small-caps 20px "garamond", serif;
+}
+#greeting {
+    text-align: center;
+    color: seagreen;
+    padding: 1em;
+    font-family: "Helvetica", Arial, serif;
+    font-size: 22px; 
+}
+#main-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; 
+    font-family:"garamond", serif;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    padding-bottom: 1em;
+    
+}
+#resume-links {
+    float: right;
+    width: 32%;
 
-	    font-family: "Georgia", Times, serif; 
-        }
-        #site-menu {
-            padding: 1em;
-            border-bottom: 1px solid rgb(222, 222, 222);
-        }
-        #projects {
-            clear: both;
-        }
-        
-        #footer {
-            padding: 2em;
-            text-align: center;
-        }
+    font-size: 14px;
+    clear: both;
+    
+}
+#profile-pic {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+#intro-text {
+width: 62%;
+    margin: 10px;
+
+    text-align: justify;
+clear: left;
+
+font-family: "Georgia", Times, serif; 
+}
+#site-menu {
+    padding: 1em;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+#projects {
+    clear: both;
+}
+
+#footer {
+    padding: 2em;
+    text-align: center;
+}
