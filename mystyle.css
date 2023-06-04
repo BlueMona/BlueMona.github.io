@@ -39,11 +39,11 @@ address {
     .flex-child:first-child {
         margin-right: 20px;
 }
-.heading {
+h2 {
     text-align: left;
     font: small-caps 24px "garamond", serif;
 }
-.heading2 {
+h3 {
     text-align: left;
     font: small-caps 20px "garamond", serif;
 }
