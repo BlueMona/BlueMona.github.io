@@ -20,7 +20,8 @@ a:visited {
 a:hover {
     background-color: floralwhite;
 }
-address {
+#address {
+    font-style: italic;
     text-align: center;
     background-color: rgb(220, 239, 229);
     margin: 10px;
@@ -28,16 +29,18 @@ address {
     clear: both;
     border: 1px solid rgb(222, 222, 222);
 }
+.container {
+    display: flex;
+    justify-content: center;
+}
 .flex-container {
     display: flex;
-    }
-
-    .flex-child {
-        flex: 1;
-    }  
-
-    .flex-child:first-child {
-        margin-right: 20px;
+}
+.divider { 
+    font-size: small;
+    font-style: normal;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 h2 {
     text-align: left;
